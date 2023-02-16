@@ -38,7 +38,7 @@ int[,] ChangeArray(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            if (i > 0 && i % 2 == 1 && j > 0 && j% 2 == 1)
+            if (i % 2 == 1 && j % 2 == 1)
             {
                 array[i, j] *= array[i, j];
             }

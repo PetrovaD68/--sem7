@@ -1,4 +1,12 @@
-﻿using System;
+﻿
+//Задайте двумерный массив размером m×n, 
+//заполненный случайными целыми числами
+
+// mas = [[1, 2, 3],
+//  [4, 5, 6]]
+// mas[0][2]
+
+using System;
 using static System.Console;
 
 Clear();
@@ -11,7 +19,8 @@ int columns=int.Parse(ReadLine());
 
 int[,] array = GetArray(rows, columns, 0, 10);
 PrintArray(array);
-
+// mas = [[1, 2, 3],
+//  [4, 5, 6]]
 int[,] GetArray(int m, int n, int minValue, int maxValue)
 {
     int[,] result = new int[m, n];
@@ -38,7 +47,7 @@ void PrintArray(int[,] inArray)
 }
 // **Задача 48:** Задайте 
 // двумерный массив размера m на n, каждый элемент
-//  в массиве находится по формуле: Aₘₙ = m+n. 
+//  в массиве находится по формуле: A[i][j] = i + j. 
 //Выведите полученный массив на экран.
 
 // m = 3, n = 4.

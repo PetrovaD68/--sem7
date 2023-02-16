@@ -3,7 +3,7 @@
 using System;
 using static System.Console;
 
-Clear();
+
 
 Write("Введите числа через пробел: ");
 int[] numbers = GetArrayFromString(ReadLine());
